@@ -35,7 +35,7 @@ void keyPressed() {
   if (key == 'r') reset();
 }
 void mousePressed() {
-  if ( hit( mouseX,mouseY, 100,100, 50,50 ) ) {
+  if ( hit( mouseX,mouseY, 100,100, 80,40 ) ) {
     counter=  counter+1;
     if (counter % 2 > 0) {
       r=  255;
