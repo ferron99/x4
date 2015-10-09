@@ -1,3 +1,5 @@
+//// Nick Ferro
+////Buttons practice
 //// Exercise 4:  click button to change background.
 
 int r,g,b;
@@ -56,14 +58,23 @@ void mousePressed() {
     }
   }
   if ( hit( mouseX,mouseY, button2X,button2Y, button2W,button2H ) ) {
+     counter=  counter+1;
+    if (counter % 2 > 0) {
       r=  55;
       g=  250;
       b=  50;
+       } else {
+      reset();
+    }
   }
   if ( hit( mouseX,mouseY, button3X,button3Y, button3W,button3H ) ) {
+     counter=  counter+1;
+    if (counter % 2 > 0) {
       r=  55;
       g=  50;
-      b=  250;
+      b=  250; } else {
+      reset();
+    }
   }
 }
 
@@ -80,3 +91,4 @@ boolean hit( float x1, float y1, float x2, float y2, float w, float h ) {
   }
   return result;
 }
+
